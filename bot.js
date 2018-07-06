@@ -235,7 +235,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === '/ryonskema' && (message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name))) {
+    if(message.member.roles.find("Phantom De Ajutor", "Owner", "Fondator") || message.content === '/skemaryon'){
         message.author.sendMessage("Your message here.")
   	}
 });
