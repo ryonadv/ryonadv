@@ -7,10 +7,12 @@ client.on('ready', () => {
 });
 
 //limbaj
-if (msg.includes('re')) {
-    message.delete();
-    message.reply('ai fost verificat de catre RyonADV BOT si ti-am trimis in privat.')
-}
+client.on('message', message => {
+    if (message.includes === 're') {
+    	message.reply('gg.')
+        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
+  	}
+});
 //limbaj
 
 
