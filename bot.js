@@ -60,13 +60,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Weilbert') {
+    if (message.content === 'Wilbert') {
     	message.reply('Un gamer adevarat.');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'Weilbert.') {
+    if (message.content === 'Wilbert.') {
     	message.reply('Un gamer adevarat.');
   	}
 });
