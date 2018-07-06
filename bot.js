@@ -119,11 +119,111 @@ client.on('message', message => {
   	}
 });
 
+
+
+
+
+//limbaj
 client.on('message', message => {
     if (message.content === 'fmm') {
     	message.reply('has been muted by RyonADV, reason: Limbaj.');
   	}
 });
-
+client.on('message', message => {
+    if (message.content === 'fututi') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'mortii') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'morti') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'mata') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'ma-ta') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'suge') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'pula') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'sperma') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'gatul') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'gatu') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'ma-ti') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'ma-tii') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'mati') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'matii') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'ratat') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'prost') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'handicapat') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'sugi') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'sugaci') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
+});
+//limbaj
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
