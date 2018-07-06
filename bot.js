@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setActivity('YouTube', { type: 'RyonADV BOT so yey' });
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('I am ready!')
+    bot.user.setStatus('RyonADV - /help ; /version');
 });
 
 client.on('message', message => {
