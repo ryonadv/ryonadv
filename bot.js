@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const swearWords = ["pula", "pizda", "sugi", "sug", "mata", "ma-ta", "fututi", "fanina", "mati", "matii", "ma-ti", "ma-tii", "morti", "mortii", "chizda", "Pizda", "Sugi", "Sug", "mMta", "Ma-ta", "Fututi", "Fanina", "Mati", "Matii", "Ma-ti", "Ma-tii", "Morti", "Mortii", "Chizda"];
 
 
-var list = [
+const list = [
     'It is certain',
     'It is decidedly so',
     'Without a doubt',
@@ -25,7 +25,7 @@ var list = [
     'Outlook not so good',
     'Very doubtful'
 ];
-var rand = Math.floor(Math.random() * list.length);
+const rand = Math.floor(Math.random() * list.length);
 
 client.on('ready', () => {
     console.log('I am ready!');
