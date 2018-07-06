@@ -236,8 +236,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     //if(message.member.roles.find("Phantom De Ajutor", "Owner", "Fondator") || message.content === '/skemaryon'){
-    if(message.member.roles.find("tretret", "retr", "ryon") || message.content === '/skemaryon'){
-        message.author.sendMessage("Your message here.")
+    if(message.member.roles.find("tretret", "retr", "aaa2") || message.content === '/skemaryon'){
+       message.author.sendMessage("Your message here.")
   	}
 });
 
