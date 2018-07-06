@@ -246,7 +246,6 @@ if(message.member.roles.some(r=>["Owner", "Fondator"].includes(r.name)) ) {
   message.reply('N-ai permisiune pentru asa ceva.');
 }
 
-message.author.sendMessage("Your message here.")
 
 
 //verificare
