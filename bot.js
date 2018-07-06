@@ -234,14 +234,19 @@ client.on('message', message => {
 //verificare
 
 
-else if (command === "skemaryon" && arg) {
-    let adminRole = message.guild.roles.find("EquiNoxAdv", "Phantom De Ajutor");
-    let modRole = message.guild.roles.find("name", "Mod");
+client.on('message', message => {
+    if (message.content === '/skemaryon') {
+    	message.reply('ai fost verificat de catre RyonADV BOT si ti-am trimis in privat.')
+        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
+  	}
+});
 
-    if(message.member.roles.has(adminRole) || message.member.roles.has(modRole)){
-       message.author.sendMessage("Your message here.");              
-    }
-}
+client.on('message', message => {
+    if (message.content === '/ryonskema') {
+    	message.reply('ai fost verificat de catre RyonADV BOT si ti-am trimis in privat.')
+        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
+  	}
+});
 
 
 //verificare
