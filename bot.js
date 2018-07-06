@@ -257,18 +257,18 @@ client.on('message', message => {
 
 client.on("message", async message => {
     
-    if(command === "infoserver") {
+    if(message.content === '/infoserver') {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
   
-  if(command === "ryonsay") {
+  if(message.content === '/ryonsay') {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
   
-  if(command === "ryonkick") {
+  if(message.content === '/ryonkick') {
     if(!message.member.roles.some(r=>["Staff Team"].includes(r.name)) )
       return message.reply("Nu ai permisiunea!");
     
@@ -287,7 +287,7 @@ client.on("message", async message => {
 
   }
   
-  if(command === "ryonban") {
+  if(message.content === '/ryonban') {
 
     if(!message.member.roles.some(r=>["Staff Team"].includes(r.name)) )
       return message.reply("Nu ai permisiunea!");
@@ -306,7 +306,7 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "ryonpurge") {
+  if(message.content === '/ryonpurge') {
 
     const deleteCount = parseInt(args[0], 10);
     
