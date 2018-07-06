@@ -42,6 +42,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'RyonAdv') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'ryonAdv') {
     	message.reply('RyonADV este un smecher.');
   	}
