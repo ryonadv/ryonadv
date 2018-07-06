@@ -8,8 +8,8 @@ client.on('ready', () => {
 
 //limbaj
 client.on('message', message => {
-    if (message.includes === 're') {
-    	message.reply('gg.')
+    if (message.includes('re')) {
+    	message.delete();
         message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
   	}
 });
