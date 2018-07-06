@@ -11,7 +11,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     
-    if (message.content.includes === 'pula') {
+    if (message.includes === 'pula') {
     	message.reply('gg');
   	}
 });
