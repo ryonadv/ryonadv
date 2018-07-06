@@ -251,6 +251,18 @@ client.on('message', message => {
 
 //verificare
 
+client.on('message', message => {
+    if (message.content === '/help') {
+    	message.reply('`/info - Vezi ping. ; /ryonskema sau /skemaryon - Primesti comanda ascunsa.`');
+  	}
+});  
+
+client.on('message', message => {
+    if (message.content === '/version') {
+    	message.reply('`Botul contine: 1) Comenzile de la [/help]. ; 2) Un sistem de verificare si anuntare a cuvintelor vulgare. ; 3) Un sistem de reply (facut la misto).`');
+  	}
+}); 
+
 
 //comenzi
 
