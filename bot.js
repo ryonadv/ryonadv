@@ -15,9 +15,10 @@ client.on('message', message => {
         return;
     }    
     
-    if (message.content.includes('test')){
+    if (msg.includes('test') || msg.includes('testv2') || msg.includes('testv3')) {
+        message.reply('mesajul tau a fost sters deoarece ai folosit un cuvant sau mai multe cuvinte indecente.');
         message.delete();
-        message.reply('mesajul tau a fost sters deoarece ai folosit un cuvant sau mai multe cuvinte indecente.')
+
     }
 });
 
