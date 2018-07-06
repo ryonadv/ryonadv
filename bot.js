@@ -12,7 +12,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     if (swearWords.some(word => message.content.includes(word)) ) {
-        message.reply("mesajul tau a fost sters deoarece s-a detectat un cuvant indecent.");
+        message.reply("mesajul tau a fost sters deoarece a fost detectat un cuvant indecent.");
         message.delete();
     }
 });
