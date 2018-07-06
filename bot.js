@@ -6,7 +6,7 @@ const slowmode_mentions = new Map();
 const slowmode_links = new Map();
 const slowmode_attachments = new Map();
 const ratelimit = 7500; // within 7.5 seconds
-const logChannel = "LOG CHANNEL ID HERE"; // logs channel id
+const logChannel = "463643431860961290"; // logs channel id
 
 client.on('ready', () => {
     console.log('I am ready!');
