@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!')
-    bot.user.setPresence({ game: { name: 'RyonADV - /help ; /version', type: 0 } });
+    client.user.setStatus('RyonADV - /help ; /version');
+
 });
 
 client.on('message', message => {
