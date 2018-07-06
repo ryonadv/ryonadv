@@ -225,5 +225,53 @@ client.on('message', message => {
   	}
 });
 //limbaj
+
+
+
+
+
+
+//info
+
+
+
+client.on("message", (message) => {
+  if(message.content === "info") {
+    message.channel.send({embed:
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Informatii",
+    url: "http://google.com",
+    description: "Aici gasiti toate noutatile BOT-ului.",
+    fields: [{
+        name: "v0.1",
+        value: "S-au adaugat noi raspunsuri."
+      },
+      {
+        name: "v0.2",
+        value: "S-a adaugat un sistem pentru limbaj care te informeaza cand folosesti cuvinte vulgare."
+      },
+      {
+        name: "v0.3",
+        value: "In curand."
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© RyonADV BOT, current version 0.3"
+    }
+  }
+});
+
+
+
+
+//info
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
