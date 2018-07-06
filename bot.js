@@ -234,17 +234,13 @@ client.on('message', message => {
 //verificare
 
 
+client.on('message', message => {
+    if(message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+    if (message.content === '/ryonskema') {
+        message.author.sendMessage("Your message here.")
+  	}
+});
 
-
-if(message.member.roles.some(r=>["Owner", "Fondator"].includes(r.name)) ) {
-  client.on('message', message => {
-      if (message.content === 'banall') {
-    	  message.author.sendMessage("Test");
-  	  }
-  });
-} else {
-  message.reply('N-ai permisiune pentru asa ceva.');
-}
 
 
 
