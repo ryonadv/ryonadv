@@ -1,7 +1,7 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "0.0.0",
+  "name": "RyonADV",
+  "description": "RyonADV Nr. 1",
+  "version": "0.0.2",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
