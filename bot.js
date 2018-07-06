@@ -119,10 +119,10 @@ client.on('message', message => {
   	}
 });
 
-client.on("message", function(message) {
-    if(message.content === "fmm") {
-        client.message.send(author, "has been muted by RyonADV, reason: Limbaj.");
-    }
+client.on('message', message => {
+    if (message.content === 'fmm') {
+    	message.reply('has been muted by RyonADV, reason: Limbaj.');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
