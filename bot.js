@@ -11,9 +11,9 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     
-    if(message.channel.type != "test") {
-        message.reply('Merge');
-    }
+    if (message.content.includes === 'pula') {
+    	message.reply('gg');
+  	}
 });
 
 
