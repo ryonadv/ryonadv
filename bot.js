@@ -10,11 +10,6 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-    
-    if (msg.includes('test') || msg.includes('testv2') || msg.includes('testv3')) {
-        message.reply('mesajul tau a fost sters deoarece ai folosit un cuvant sau mai multe cuvinte indecente.');
-
-    }
 });
 
 
