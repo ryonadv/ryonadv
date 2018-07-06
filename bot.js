@@ -24,6 +24,36 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'Ryon') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Ryonadv') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'RyonADV') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'ryonAdv') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'ryonADV') {
+    	message.reply('RyonADV este un smecher.');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'ms') {
     	message.reply('Cu placere!');
   	}
