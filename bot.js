@@ -234,14 +234,14 @@ client.on('message', message => {
 //verificare
 
 
-client.on('message', message => {
-    //if(message.member.roles.find("Phantom De Ajutor", "Owner", "Fondator") || message.content === '/skemaryon'){
-    if(message.member.roles.find("tretret", "retr", "aaa2") || message.content === '/skemaryon'){
-       message.author.sendMessage("Your message here.");
-  	}
-});
+else if (command === "skemaryon" && arg) {
+    let adminRole = message.guild.roles.find("EquiNoxAdv", "Phantom De Ajutor");
+    let modRole = message.guild.roles.find("name", "Mod");
 
-//if (message.content === '/ryonskema' && (message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name))) {
+    if(message.member.roles.has(adminRole) || message.member.roles.has(modRole)){
+       message.author.sendMessage("Your message here.");              
+    }
+}
 
 
 //verificare
