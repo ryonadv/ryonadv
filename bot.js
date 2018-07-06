@@ -10,8 +10,8 @@ const logChannel = "463643431860961290"; // logs channel id
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('available')
-    bot.user.setPresence({
+    client.user.setStatus('available')
+    client.user.setPresence({
         game: {
             name: 'RyonADV BOT v0.2 -> v0.3',
             type: "STREAMING",
