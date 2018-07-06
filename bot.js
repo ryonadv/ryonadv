@@ -235,7 +235,6 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if(message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
     if (message.content === '/ryonskema') {
         message.author.sendMessage("Your message here.")
   	}
