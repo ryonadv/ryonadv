@@ -23,5 +23,65 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'ms') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'multumesc') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Multumesc!') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Merci!') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Mersi') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Mersi!') {
+    	message.reply('Cu placere!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Weilbert') {
+    	message.reply('Un gamer adevarat.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Weilbert.') {
+    	message.reply('Un gamer adevarat.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Mihai') {
+    	message.reply('Un gamer adevarat.');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Mohai') {
+    	message.reply('Un gamer adevarat.');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
