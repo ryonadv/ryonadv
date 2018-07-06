@@ -2,73 +2,28 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    client.user.setStatus('RyonADV - /help ; /version');
-
-});
-
-//limbaj
-client.on('message', message => {
-    if (message.includes('re')) {
-    	message.delete();
-        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
-  	}
-});
-//limbaj
-
-
-
-
-
-
-//verificare
-
-
-client.on('message', message => {
-    if (message.content === '/skemaryon') {
-    	message.reply('ai fost verificat de catre RyonADV BOT si ti-am trimis in privat.')
-        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '/ryonskema') {
-    	message.reply('ai fost verificat de catre RyonADV BOT si ti-am trimis in privat.')
-        message.author.sendMessage("Momentan nu ai acces sa vezi comanda ascunsa pentru a primi grad.");
-  	}
+    console.log('I am ready!');
 });
 
 
-//verificare
-
 client.on('message', message => {
-    if (message.content === '/help') {
-    	message.reply('`/info - Vezi ping. ; /ryonskema sau /skemaryon - Primesti comanda ascunsa.`');
+    if (message.content === 'ping') {
+    	message.reply('pong');
   	}
-});  
-
-client.on('message', message => {
-    if (message.content === '/version') {
-    	message.reply('`Botul contine: 1) Comenzile de la [/help]. ; 2) Un sistem de verificare si anuntare a cuvintelor vulgare. ; 3) Un sistem de reply (facut la misto).`');
-  	}
-}); 
-
-
-//comenzi
-
-
-client.on("message", async message => { 
     
-    if(message.content === '/info') {
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
-  }
+    if (sender.id === '464797765457674251') {
+        return;
+    }    
+    
+    if(message.content.includes('test')) {
+        message.delete():
+        message.reply('mesajul tau a fost sters deoarece ai folosit un cuvant sau mai multe cuvinte indecente.')
+    }
 });
 
 
 
-//comenzi
 
-
-
-// THIS  MUST  BE  THIS  WAY
+//login
 client.login(process.env.BOT_TOKEN);
+//login
