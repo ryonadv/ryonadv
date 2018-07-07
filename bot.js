@@ -27,7 +27,7 @@ client.on('message', message => {
   	}
 	
     if (message.content === '/skema') {
-    	message.reply('```css v0.3 -> Custom Status Game ; Anti-Swear System ; Anti-Spam System ```');
+    	message.reply('```cssv0.3 -> Custom Status Game ; Anti-Swear System ; Anti-Spam System```');
   	}	
 	
     if (swearWords.some(word => message.content.includes(word)) ) {
