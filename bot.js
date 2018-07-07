@@ -1,19 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const swearWords = ["pula", "pizda", "sugi", "sug", "mata", "ma-ta", "fututi", "fanina", "mati", "matii", "ma-ti", "ma-tii", "morti", "mortii", "chizda", "Pizda", "Sugi", "Sug", "mMta", "Ma-ta", "Fututi", "Fanina", "Mati", "Matii", "Ma-ti", "Ma-tii", "Morti", "Mortii", "Chizda", "ratat", "Ratat", "Coaie", "coaie"];
-
+const swearWords = ["pula", "Suck", "suck", "Shit", "shit", "Fut", "fut", "Dick", "dick", "pizda", "sugi", "sug", "mata", "ma-ta", "fututi", "fanina", "mati", "matii", "ma-ti", "ma-tii", "morti", "mortii", "chizda", "Pizda", "Sugi", "Sug", "mMta", "Ma-ta", "Fututi", "Fanina", "Mati", "Matii", "Ma-ti", "Ma-tii", "Morti", "Mortii", "Chizda", "ratat", "Ratat", "Coaie", "coaie"];
+//, "pizda"
 const slowmode_mentions = new Map();
 const slowmode_links = new Map();
 const slowmode_attachments = new Map();
 const ratelimit = 7500; // within 7.5 seconds
-const logChannel = "463643431860961290"; // logs channel id
+const logChannel = "465090519681466368"; // logs channel id
 
 client.on('ready', () => {
     console.log('I am ready!');
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
-            name: 'RyonADV BOT v0.2 -> v0.3',
+            name: 'RyonADV - /skema - EN / RO BOT',
             type: "STREAMING",
             url: "https://www.twitch.tv/ryonadvbotnamtwitchimiparerau"
         }
@@ -25,7 +25,11 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-    
+	
+    if (message.content === '/skema') {
+    	message.reply('v0.3 -> Custom Status Game ; Anti-Swear System ; Anti-Spam System');
+  	}	
+	
     if (swearWords.some(word => message.content.includes(word)) ) {
         message.reply("mesajul tau a fost sters deoarece a fost detectat un cuvant indecent.");
         message.delete();
